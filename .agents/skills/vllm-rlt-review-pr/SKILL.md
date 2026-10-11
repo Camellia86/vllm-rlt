@@ -50,6 +50,15 @@ do not create a duplicate planning artifact or copy private discussion into a
 public PR. This gate supplements all existing validation and authorization
 requirements.
 
+Before submission, inspect the actual PR description against the
+[PR template](../../../.github/PULL_REQUEST_TEMPLATE.md). All four required human
+answers and the PR-necessity decision must be complete, with observed failure
+evidence for a bugfix. Blank fields, placeholders, agent-invented answers, and
+unresolved source references are blockers: ask the human only for what is
+missing and wait. Reuse explicit, traceable answers instead of asking again.
+This is a contributor workflow constraint; the Markdown template does not
+provide server-side enforcement.
+
 Contributor entry point: [CONTRIBUTING.md](../../../CONTRIBUTING.md).
 
 ## Freeze the review
